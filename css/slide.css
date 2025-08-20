@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+
+/*CSSスライドショー設定
+---------------------------------------------------------------------------*/
+/*１枚目*/
+@keyframes slide1 {
+	0% {opacity: 0; transform: scale(1);}
+	10% {opacity: 1;}
+	40% {transform: scale(1.1);}
+	50% {opacity: 1;}
+	60% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/*２枚目*/
+@keyframes slide2 {
+	0% {opacity: 0;}
+	25% {opacity: 0; transform: scale(1);}
+	35% {opacity: 1;}
+	65% {transform: scale(1.1);}
+	75% {opacity: 1;}
+	85% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/*3枚目*/
+@keyframes slide3 {
+	0% {opacity: 0;}
+	50% {opacity: 0; transform: scale(1);}
+	60% {opacity: 1;}
+	80% {opacity: 1;}
+	90% {opacity: 0; transform: scale(1.1);}
+	100% {opacity: 0;}
+}
+
+/*mainimg
+---------------------------------------------------------------------------*/
+/*画像ブロック*/
+#mainimg {
+	clear: both;
+	position: fixed;	/*スクロールしても固定表示させる指定*/
+	top: 0px;
+	width: 100%;
+	background: url(../images/0.jpg) no-repeat center center/cover;	/*最初の１枚目（土台画像）*/
+}
+/*３枚画像の共通設定*/
+.slide1,.slide2,.slide3 {
+	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
+	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
+	position: absolute;left:0px;top:0px;width: 100%;height: auto;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+}
+/*１枚目*/
+.slide1 {
+	animation-name: slide1;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*２枚目*/
+.slide2 {
+	animation-name: slide2;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*３枚目*/
+.slide3 {
+	animation-name: slide3;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*スライドショー下の曲線グラデーション画像*/
+#kazari {
+	position: absolute;
+	bottom: -1px;
+	z-index: 2;
+	width: 100%;
+}
+

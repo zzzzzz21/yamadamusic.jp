@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>お問い合わせの確認 | 山田音楽財団</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="一般財団法人 山田音楽財団へのお問い合わせ確認。">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/slide.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/openclose.js"></script>
+        <script src="js/fixmenu.js"></script>
+        <script src="js/fixmenu_pagetop.js"></script>
+        <script src="js/ddmenu_min.js"></script>
+        <script src="js/loadcommon.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163091507-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-163091507-2');
+        </script>
+    </head>
+
+    <body class="s-n">
+
+        <div id="container">
+
+            <header>
+                <div class="inner">
+                    <h1 id="logo"><a href="index.html"><img src="images/logo.jpg" alt="一般財団法人 山田音楽財団"></a></h1>
+                </div>
+            </header>
+
+            <!--PC用（901px以上端末）メニュー-->
+            <nav id="menubar" class="nav-fix-pos">
+            </nav>
+
+            <!--小さな端末用（900px以下端末）メニュー-->
+            <nav id="menubar-s">
+            </nav>
+
+            <div id="contents">
+
+                <div class="inner">
+
+                    <section>
+
+                        <h2>確認画面<span>Contact</span></h2>
+
+                        <!-- フォームの情報はここからです -->
+                        <form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+                            <input type="hidden" name="mode" value="confirm">
+                            <table class="ta1">
+                                <!--<tr><td colspan="2" class="auto"><strong>確認画面</strong></td></tr>-->
+                                <!-- 入力／確認 -->
+                                <!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
+                                <tr>
+                                    <th>ご氏名のフリガナ<span style="color:red">※</span></th>
+                                    <td>
+                                        <input type="hidden" name="item1" value="<?php echo $form["item1"];?>">
+                                        <?php echo $form["item1"];?>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>ご氏名<span style="color:red">※</span></th>
+                                    <td>
+                                        <input type="hidden" name="item2" value="<?php echo $form["item2"];?>">
+                                        <?php echo $form["item2"];?>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>メールアドレス<span style="color:red">※</span></th>
+                                    <td>
+                                        <input type="hidden" name="item3" value="<?php echo $form["item3"];?>">
+                                        <?php echo $form["item3"];?>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th width="150">電話番号</th>
+                                    <td>
+                                        <input type="hidden" name="item4" value="<?php echo $form["item4"];?>">
+                                        <?php echo $form["item4"];?>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th nowrap>お問い合わせ内容<span style="color:red">※</span></th>
+                                    <td>
+                                        <input type="hidden" name="item5" value="<?php echo $form["item5"]; ?>">
+                                        <?php echo nl2br($form["item5"]);?>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                            <div class="c">
+                                <input type="submit" value="送信する" class="btn">
+                                &nbsp;
+                                <input type="button" value="戻る" onClick="document.form1.mode.value = 'reinput';document.form1.submit()" class="btn">
+                            </div>
+                        </form>
+                        <!-- フォームの情報はここまでです -->
+
+                    </section>
+
+                </div>
+                <!--/.inner-->
+
+            </div>
+            <!--/#contents-->
+
+            <footer id="footer">
+            </footer>
+
+        </div>
+        <!--/#container-->
+
+    </body>
+</html>
