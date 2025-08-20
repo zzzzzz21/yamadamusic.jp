@@ -6,6 +6,8 @@
 /*全体の設定
 ---------------------------------------------------------------------------*/
 html,body,#container {height: 100%;}
+#container {
+}
 body {
     margin: 0px;
     padding: 0px;
