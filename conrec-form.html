@@ -1,233 +1,264 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>お申込み | 山田音楽財団</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="一般財団法人 山田音楽財団へのお問い合わせ。">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/slide.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="js/openclose.js"></script>
-        <script src="js/fixmenu.js"></script>
-        <script src="js/fixmenu_pagetop.js"></script>
-        <script src="js/ddmenu_min.js"></script>
-        <script src="js/loadcommon.js"></script>
-        <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163091507-2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
 
-            gtag('config', 'UA-163091507-2');
-        </script>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FNTFLL9');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>お申込み | 山田音楽財団</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一般財団法人 山田音楽財団へのお問い合わせ。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/openclose.js"></script>
+  <script src="js/fixmenu.js"></script>
+  <script src="js/fixmenu_pagetop.js"></script>
+  <script src="js/ddmenu_min.js"></script>
+  <script src="js/loadcommon.js"></script>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+</head>
 
-    <body class="s-n">
+<body class="s-n">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FNTFLL9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="container">
 
-        <div id="container">
+    <header>
+      <div class="inner">
+        <h1 id="logo"><a href="index.html"><img src="images/logo.jpg" alt="一般財団法人 山田音楽財団"></a></h1>
+      </div>
+    </header>
 
-            <header>
-                <div class="inner">
-                    <h1 id="logo"><a href="index.html"><img src="images/logo.jpg" alt="一般財団法人 山田音楽財団"></a></h1>
-                </div>
-            </header>
+    <!--PC用（901px以上端末）メニュー-->
+    <nav id="menubar" class="nav-fix-pos">
+    </nav>
 
-            <!--PC用（901px以上端末）メニュー-->
-            <nav id="menubar" class="nav-fix-pos">
-            </nav>
+    <!--小さな端末用（900px以下端末）メニュー-->
+    <nav id="menubar-s">
+    </nav>
 
-            <!--小さな端末用（900px以下端末）メニュー-->
-            <nav id="menubar-s">
-            </nav>
+    <div id="contents">
 
-            <div id="contents">
+      <div class="inner">
 
-                <div class="inner">
+        <section>
 
-                    <section>
+          <h2>コンサート･録音 助成事業<br>応募専用フォーム</h2>
 
-                        <h2>コンサート･録音 助成事業<br>応募専用フォーム</h2>
+          <p class="mb1em">
+            <span style="color:red">※</span>全ての項目に入力が必要です。
+            <br> ※携帯のキャリアメールで登録される方は、PCからのメールを受け取れるように設定してください。
+            <br>
+            <!--span style="margin-right:1em;"></span>申請後に確認用のメールが自動で届きます。<br-->
+            ※採否のお知らせは3月上旬頃にメールでご連絡いたします。
+            <br>
+          </p>
 
-                        <p class="mb1em">
-                            <span style="color:red">※</span>全ての項目に入力が必要です。<br>
-                            ※携帯のキャリアメールで登録される方は、PCからのメールを受け取れるように設定してください。<br><!--span style="margin-right:1em;"></span>申請後に確認用のメールが自動で届きます。<br-->
-                            ※採否のお知らせは3月上旬頃にメールでご連絡いたします。<br>
-                        </p>
+          <!-- フォームの情報はここからです -->
+          <form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER[" REQUEST_URI "];?>">
+            <input type="hidden" name="mode" value="form" />
+            <table class="ta1 mb1em">
+              <!-- 入力／確認 -->
 
-                        <!-- フォームの情報はここからです -->
-                        <form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
-                            <input type="hidden" name="mode" value="form" />
-                            <table class="ta1 mb1em">
-                                <!-- 入力／確認 -->
+              <tr>
+                <th width="150">ご氏名</th>
+                <td>
+                  <input name="item1" value="<?php echo $form[" item1 "];?>" type="text" size="40" maxlength="500" class="ws">
+                  <?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">ご氏名</th>
-                                    <td>
-                                        <input name="item1" value="<?php echo $form["item1"];?>" type="text" size="40" maxlength="500" class="ws">
-                                        <?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
-                                    </td>
-                                </tr>
+              <tr>
+                <th width="150" nowrap>ご氏名の
+                  <br class="br-resp">フリガナ
+                  <br>(カタカナ)</th>
+                <td>
+                  <input name="item2" value="<?php echo $form[" item2 "];?>" type="text" size="40" maxlength="500" class="ws">
+                  <?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150" nowrap>ご氏名の<br class="br-resp">フリガナ<br>(カタカナ)</th>
-                                    <td>
-                                        <input name="item2" value="<?php echo $form["item2"];?>" type="text" size="40" maxlength="500" class="ws">
-                                        <?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
-                                    </td>
-                                </tr>
+              <tr>
+                <th width="150">郵便番号</th>
+                <td>
+                  〒
+                  <input name="zip11" value="<?php echo $form[" zip11 "];?>" type="text" size="10" maxlength="500" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+                  <?php if ($msg["zip11"]) echo '<div style="color:red">' . $msg["zip11"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">郵便番号</th>
-                                    <td>
-                                        〒<input  name="zip11" value="<?php echo $form["zip11"];?>" type="text" size="10" maxlength="500" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
-                                        <?php if ($msg["zip11"]) echo '<div style="color:red">' . $msg["zip11"] . '</div>'; ?>
-                                    </td>
-                                </tr>
+              <tr>
+                <th width="150">ご住所・
+                  <br class="br-resp">所在地</th>
+                <td>
+                  <input name="addr11" value="<?php echo $form[" addr11 "];?>" type="text" size="40" maxlength="500" class="wl">
+                  <?php if ($msg["addr11"]) echo '<div style="color:red">' . $msg["addr11"] . '</div>'; ?>
+                    <br>
+                    <input name="item5" value="<?php echo $form[" item5 "];?>" type="text" size="40" maxlength="500" class="wl">
+                    <?php if ($msg["item5"]) echo '<div style="color:red">' . $msg["item5"] . '</div>'; ?>
+                      <div>（２行目に、ビル・マンション等の名称と部屋番号をお書きください）</div>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">ご住所・<br class="br-resp">所在地</th>
-                                    <td>
-                                        <input name="addr11" value="<?php echo $form["addr11"];?>" type="text" size="40" maxlength="500" class="wl">
-                                        <?php if ($msg["addr11"]) echo '<div style="color:red">' . $msg["addr11"] . '</div>'; ?>
-                                        <br>
-                                        <input name="item5" value="<?php echo $form["item5"];?>" type="text" size="40" maxlength="500" class="wl">
-                                        <?php if ($msg["item5"]) echo '<div style="color:red">' . $msg["item5"] . '</div>'; ?>
-                                        <div>（２行目に、ビル・マンション等の名称と部屋番号をお書きください）</div>
-                                    </td>
-                                </tr>
+              <tr>
+                <th width="150">電話番号</th>
+                <td>
+                  <input name="item6" value="<?php echo $form[" item6 "];?>" type="tel" autocomplete="tel" type="text" size="40" maxlength="500" class="ws">
+                  <?php if ($msg["item6"]) echo '<div style="color:red">' . $msg["item6"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">電話番号</th>
-                                    <td>
-                                        <input name="item6" value="<?php echo $form["item6"];?>" type="tel" autocomplete="tel" type="text" size="40" maxlength="500" class="ws">
-                                        <?php if ($msg["item6"]) echo '<div style="color:red">' . $msg["item6"] . '</div>'; ?>
-                                    </td>
-                                </tr>
+              <tr>
+                <th width="150">メール
+                  <br class="br-resp">アドレス</th>
+                <td>
+                  <input name="item7" value="<?php echo $form[" item7 "];?>" autocomplete="email" type="text" size="40" maxlength="500" class="ws">
+                  <?php if ($msg["item7"]) echo '<div style="color:red">' . $msg["item7"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">メール<br class="br-resp">アドレス</th>
-                                    <td>
-                                        <input name="item7" value="<?php echo $form["item7"];?>" autocomplete="email" type="text" size="40" maxlength="500" class="ws">
-                                        <?php if ($msg["item7"]) echo '<div style="color:red">' . $msg["item7"] . '</div>'; ?>
-                                    </td>
-                                </tr>
+              <tr>
+                <th width="150">生年月日
+                  <br>(西暦)</th>
+                <td>
+                  <input name="item8_year" value="<?php echo $form[" item8_year "];?>" type="text" size="5" maxlength="4" />年
+                  <select name="item8_month">
+                    <option value="">--------</option>
+                    <option value="1" <?php if ($form[ "item6_month"]==1) echo 'selected="selected"';?>>1</option>
+                    <option value="2" <?php if ($form[ "item6_month"]==2) echo 'selected="selected"';?>>2</option>
+                    <option value="3" <?php if ($form[ "item6_month"]==3) echo 'selected="selected"';?>>3</option>
+                    <option value="4" <?php if ($form[ "item6_month"]==4) echo 'selected="selected"';?>>4</option>
+                    <option value="5" <?php if ($form[ "item6_month"]==5) echo 'selected="selected"';?>>5</option>
+                    <option value="6" <?php if ($form[ "item6_month"]==6) echo 'selected="selected"';?>>6</option>
+                    <option value="7" <?php if ($form[ "item6_month"]==7) echo 'selected="selected"';?>>7</option>
+                    <option value="8" <?php if ($form[ "item6_month"]==8) echo 'selected="selected"';?>>8</option>
+                    <option value="9" <?php if ($form[ "item6_month"]==9) echo 'selected="selected"';?>>9</option>
+                    <option value="10" <?php if ($form[ "item6_month"]==10) echo 'selected="selected"';?>>10</option>
+                    <option value="11" <?php if ($form[ "item6_month"]==11) echo 'selected="selected"';?>>11</option>
+                    <option value="12" <?php if ($form[ "item6_month"]==12) echo 'selected="selected"';?>>12</option>
+                  </select>
+                  月
+                  <select name="item8_day">
+                    <option value="">--------</option>
+                    <option value="1" <?php if ($form[ "item6_day"]==1) echo 'selected="selected"';?>>1</option>
+                    <option value="2" <?php if ($form[ "item6_day"]==2) echo 'selected="selected"';?>>2</option>
+                    <option value="3" <?php if ($form[ "item6_day"]==3) echo 'selected="selected"';?>>3</option>
+                    <option value="4" <?php if ($form[ "item6_day"]==4) echo 'selected="selected"';?>>4</option>
+                    <option value="5" <?php if ($form[ "item6_day"]==5) echo 'selected="selected"';?>>5</option>
+                    <option value="6" <?php if ($form[ "item6_day"]==6) echo 'selected="selected"';?>>6</option>
+                    <option value="7" <?php if ($form[ "item6_day"]==7) echo 'selected="selected"';?>>7</option>
+                    <option value="8" <?php if ($form[ "item6_day"]==8) echo 'selected="selected"';?>>8</option>
+                    <option value="9" <?php if ($form[ "item6_day"]==9) echo 'selected="selected"';?>>9</option>
+                    <option value="10" <?php if ($form[ "item6_day"]==10) echo 'selected="selected"';?>>10</option>
+                    <option value="11" <?php if ($form[ "item6_day"]==11) echo 'selected="selected"';?>>11</option>
+                    <option value="12" <?php if ($form[ "item6_day"]==12) echo 'selected="selected"';?>>12</option>
+                    <option value="13" <?php if ($form[ "item6_day"]==13) echo 'selected="selected"';?>>13</option>
+                    <option value="14" <?php if ($form[ "item6_day"]==14) echo 'selected="selected"';?>>14</option>
+                    <option value="15" <?php if ($form[ "item6_day"]==15) echo 'selected="selected"';?>>15</option>
+                    <option value="16" <?php if ($form[ "item6_day"]==16) echo 'selected="selected"';?>>16</option>
+                    <option value="17" <?php if ($form[ "item6_day"]==17) echo 'selected="selected"';?>>17</option>
+                    <option value="18" <?php if ($form[ "item6_day"]==18) echo 'selected="selected"';?>>18</option>
+                    <option value="19" <?php if ($form[ "item6_day"]==19) echo 'selected="selected"';?>>19</option>
+                    <option value="20" <?php if ($form[ "item6_day"]==20) echo 'selected="selected"';?>>20</option>
+                    <option value="21" <?php if ($form[ "item6_day"]==21) echo 'selected="selected"';?>>21</option>
+                    <option value="22" <?php if ($form[ "item6_day"]==22) echo 'selected="selected"';?>>22</option>
+                    <option value="23" <?php if ($form[ "item6_day"]==23) echo 'selected="selected"';?>>23</option>
+                    <option value="24" <?php if ($form[ "item6_day"]==24) echo 'selected="selected"';?>>24</option>
+                    <option value="25" <?php if ($form[ "item6_day"]==25) echo 'selected="selected"';?>>25</option>
+                    <option value="26" <?php if ($form[ "item6_day"]==26) echo 'selected="selected"';?>>26</option>
+                    <option value="27" <?php if ($form[ "item6_day"]==27) echo 'selected="selected"';?>>27</option>
+                    <option value="28" <?php if ($form[ "item6_day"]==28) echo 'selected="selected"';?>>28</option>
+                    <option value="29" <?php if ($form[ "item6_day"]==29) echo 'selected="selected"';?>>29</option>
+                    <option value="30" <?php if ($form[ "item6_day"]==30) echo 'selected="selected"';?>>30</option>
+                    <option value="31" <?php if ($form[ "item6_day"]==31) echo 'selected="selected"';?>>31</option>
+                  </select>
+                  日
+                  <?php if ($msg["item8"]) echo '<div style="color:red">' . $msg["item8"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">生年月日<br>(西暦)</th>
-                                    <td>
-                                        <input name="item8_year" value="<?php echo $form["item8_year"];?>" type="text" size="5" maxlength="4" />年 
-                                        <select name="item8_month">
-                                            <option value="">--------</option>
-                                            <option value="1" <?php if ($form["item6_month"]==1) echo 'selected="selected"';?>>1</option>
-                                            <option value="2" <?php if ($form["item6_month"]==2) echo 'selected="selected"';?>>2</option>
-                                            <option value="3" <?php if ($form["item6_month"]==3) echo 'selected="selected"';?>>3</option>
-                                            <option value="4" <?php if ($form["item6_month"]==4) echo 'selected="selected"';?>>4</option>
-                                            <option value="5" <?php if ($form["item6_month"]==5) echo 'selected="selected"';?>>5</option>
-                                            <option value="6" <?php if ($form["item6_month"]==6) echo 'selected="selected"';?>>6</option>
-                                            <option value="7" <?php if ($form["item6_month"]==7) echo 'selected="selected"';?>>7</option>
-                                            <option value="8" <?php if ($form["item6_month"]==8) echo 'selected="selected"';?>>8</option>
-                                            <option value="9" <?php if ($form["item6_month"]==9) echo 'selected="selected"';?>>9</option>
-                                            <option value="10" <?php if ($form["item6_month"]==10) echo 'selected="selected"';?>>10</option>
-                                            <option value="11" <?php if ($form["item6_month"]==11) echo 'selected="selected"';?>>11</option>
-                                            <option value="12" <?php if ($form["item6_month"]==12) echo 'selected="selected"';?>>12</option>
-                                        </select>
-                                        月 
-                                        <select name="item8_day">
-                                            <option value="">--------</option>
-                                            <option value="1" <?php if ($form["item6_day"]==1) echo 'selected="selected"';?>>1</option>
-                                            <option value="2" <?php if ($form["item6_day"]==2) echo 'selected="selected"';?>>2</option>
-                                            <option value="3" <?php if ($form["item6_day"]==3) echo 'selected="selected"';?>>3</option>
-                                            <option value="4" <?php if ($form["item6_day"]==4) echo 'selected="selected"';?>>4</option>
-                                            <option value="5" <?php if ($form["item6_day"]==5) echo 'selected="selected"';?>>5</option>
-                                            <option value="6" <?php if ($form["item6_day"]==6) echo 'selected="selected"';?>>6</option>
-                                            <option value="7" <?php if ($form["item6_day"]==7) echo 'selected="selected"';?>>7</option>
-                                            <option value="8" <?php if ($form["item6_day"]==8) echo 'selected="selected"';?>>8</option>
-                                            <option value="9" <?php if ($form["item6_day"]==9) echo 'selected="selected"';?>>9</option>
-                                            <option value="10" <?php if ($form["item6_day"]==10) echo 'selected="selected"';?>>10</option>
-                                            <option value="11" <?php if ($form["item6_day"]==11) echo 'selected="selected"';?>>11</option>
-                                            <option value="12" <?php if ($form["item6_day"]==12) echo 'selected="selected"';?>>12</option>
-                                            <option value="13" <?php if ($form["item6_day"]==13) echo 'selected="selected"';?>>13</option>
-                                            <option value="14" <?php if ($form["item6_day"]==14) echo 'selected="selected"';?>>14</option>
-                                            <option value="15" <?php if ($form["item6_day"]==15) echo 'selected="selected"';?>>15</option>
-                                            <option value="16" <?php if ($form["item6_day"]==16) echo 'selected="selected"';?>>16</option>
-                                            <option value="17" <?php if ($form["item6_day"]==17) echo 'selected="selected"';?>>17</option>
-                                            <option value="18" <?php if ($form["item6_day"]==18) echo 'selected="selected"';?>>18</option>
-                                            <option value="19" <?php if ($form["item6_day"]==19) echo 'selected="selected"';?>>19</option>
-                                            <option value="20" <?php if ($form["item6_day"]==20) echo 'selected="selected"';?>>20</option>
-                                            <option value="21" <?php if ($form["item6_day"]==21) echo 'selected="selected"';?>>21</option>
-                                            <option value="22" <?php if ($form["item6_day"]==22) echo 'selected="selected"';?>>22</option>
-                                            <option value="23" <?php if ($form["item6_day"]==23) echo 'selected="selected"';?>>23</option>
-                                            <option value="24" <?php if ($form["item6_day"]==24) echo 'selected="selected"';?>>24</option>
-                                            <option value="25" <?php if ($form["item6_day"]==25) echo 'selected="selected"';?>>25</option>
-                                            <option value="26" <?php if ($form["item6_day"]==26) echo 'selected="selected"';?>>26</option>
-                                            <option value="27" <?php if ($form["item6_day"]==27) echo 'selected="selected"';?>>27</option>
-                                            <option value="28" <?php if ($form["item6_day"]==28) echo 'selected="selected"';?>>28</option>
-                                            <option value="29" <?php if ($form["item6_day"]==29) echo 'selected="selected"';?>>29</option>
-                                            <option value="30" <?php if ($form["item6_day"]==30) echo 'selected="selected"';?>>30</option>
-                                            <option value="31" <?php if ($form["item6_day"]==31) echo 'selected="selected"';?>>31</option>
-                                        </select>
-                                        日
-                                        <?php if ($msg["item8"]) echo '<div style="color:red">' . $msg["item8"] . '</div>'; ?></td>
-                                </tr>
+              <tr>
+                <th>プロフィール
+                  <br>(300字以内)</th>
+                <td>
+                  <textarea name="item9" cols="40" rows="10" class="wl">
+                    <?php echo $form["item9"]; ?>
+                  </textarea>
+                  <?php if ($msg["item9"]) echo '<div style="color:red">' . $msg["item9"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th>プロフィール<br>(300字以内)</th>
-                                    <td>
-                                        <textarea name="item9" cols="40" rows="10" class="wl"><?php echo $form["item9"]; ?></textarea>
-                                        <?php if ($msg["item9"]) echo '<div style="color:red">' . $msg["item9"] . '</div>'; ?>
-                                    </td>
-                                </tr>
+              <tr>
+                <th width="150">申請書
+                  <br>第１~４号
+                  <br>(pdf)</th>
+                <td>
+                  <input name="item10" value="" type="file" size="40" maxlength="500" />
+                  <?php if ($msg["item10"]) echo '<div style="color:red">' . $msg["item10"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">申請書<br>第１~４号<br>(pdf)</th>
-                                    <td>
-                                        <input name="item10" value="" type="file" size="40" maxlength="500" />
-                                        <?php if ($msg["item10"]) echo '<div style="color:red">' . $msg["item10"] . '</div>'; ?></td>
-                                </tr>
+              <tr>
+                <th width="150">推薦書
+                  <br>(原文)
+                  <br>(pdf･jpg)</th>
+                <td>
+                  <input name="item11" value="" type="file" size="40" maxlength="500" />
+                  <?php if ($msg["item11"]) echo '<div style="color:red">' . $msg["item11"] . '</div>'; ?>
+                </td>
+              </tr>
 
-                                <tr>
-                                    <th width="150">推薦書<br>(原文)<br>(pdf･jpg)</th>
-                                    <td>
-                                        <input name="item11" value="" type="file" size="40" maxlength="500" />
-                                        <?php if ($msg["item11"]) echo '<div style="color:red">' . $msg["item11"] . '</div>'; ?></td>
-                                </tr>
-
-                                <!--tr>
+              <!--tr>
                                     <th width="150">推薦書<span style="color:red">※</span><br>(翻訳文)<br>(pdf)</th>
                                     <td>
                                         <input name="item12" value="" type="file" size="40" maxlength="500" />
                                         <?php if ($msg["item12"]) echo '<div style="color:red">' . $msg["item12"] . '</div>'; ?></td>
                                 </tr-->
 
-                            </table>
+            </table>
 
-                            <div class="c">
-                                <!--input type="reset" value="リセット" class="btn" />
+            <div class="c">
+              <!--input type="reset" value="リセット" class="btn" />
 								<span style="margin-right:1em;"></span-->
-                                <input type="submit" value="内容を確認する" class="btn" />
-                            </div>
-                        </form>
-                        <!-- フォームの情報はここまでです -->
-
-                    </section>
-
-                </div>
-                <!--/.inner-->
-
+              <input type="submit" value="内容を確認する" class="btn" />
             </div>
-            <!--/#contents-->
+          </form>
+          <!-- フォームの情報はここまでです -->
 
-            <footer id="footer">
-            </footer>
+        </section>
 
-        </div>
-        <!--/#container-->
+      </div>
+      <!--/.inner-->
 
-    </body>
+    </div>
+    <!--/#contents-->
+
+    <footer id="footer">
+    </footer>
+
+  </div>
+  <!--/#container-->
+
+</body>
+
 </html>

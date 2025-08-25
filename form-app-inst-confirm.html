@@ -1,200 +1,230 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>応募の確認 | 山田音楽財団</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="一般財団法人 山田音楽財団へのお問い合わせ確認。">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/slide.css">
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script src="js/openclose.js"></script>
-		<script src="js/fixmenu.js"></script>
-		<script src="js/fixmenu_pagetop.js"></script>
-		<script src="js/ddmenu_min.js"></script>
-		<script src="js/loadcommon.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163091507-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-163091507-2');
-</script>
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5FNTFLL9');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>応募の確認 | 山田音楽財団</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一般財団法人 山田音楽財団へのお問い合わせ確認。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/openclose.js"></script>
+  <script src="js/fixmenu.js"></script>
+  <script src="js/fixmenu_pagetop.js"></script>
+  <script src="js/ddmenu_min.js"></script>
+  <script src="js/loadcommon.js"></script>
 </head>
 
 <body class="s-n">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FNTFLL9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="container">
 
-<div id="container">
+    <header>
+      <div class="inner">
+        <h1 id="logo"><a href="index.html"><img src="images/logo.jpg" alt="一般財団法人 山田音楽財団"></a></h1>
+      </div>
+    </header>
 
-<header>
-<div class="inner">
-<h1 id="logo"><a href="index.html"><img src="images/logo.jpg" alt="一般財団法人 山田音楽財団"></a></h1>
-</div>
-</header>
+    <!--PC用（901px以上端末）メニュー-->
+    <nav id="menubar" class="nav-fix-pos">
+    </nav>
 
-<!--PC用（901px以上端末）メニュー-->
-<nav id="menubar" class="nav-fix-pos">
-</nav>
+    <!--小さな端末用（900px以下端末）メニュー-->
+    <nav id="menubar-s">
+    </nav>
 
-<!--小さな端末用（900px以下端末）メニュー-->
-<nav id="menubar-s">
-</nav>
+    <div id="contents">
 
-<div id="contents">
+      <div class="inner">
 
-<div class="inner">
+        <section>
 
-<section>
+          <h2>応募内容の確認</h2>
 
-<h2>応募内容の確認</h2>
+          <!-- フォームの情報はここからです -->
 
-<!-- フォームの情報はここからです -->
+          <style>
+            .ta1 {
+              table-layout: auto;
+            }
+          </style>
 
-<style>.ta1 {table-layout:auto;}</style>
+          <form name="form1" method="post" action="<?php echo $_SERVER[" REQUEST_URI "];?>">
+            <input type="hidden" name="mode" value="confirm" />
+            <table class="ta1 mb1em">
+              <tr>
+                <td colspan="2" class="auto"><strong>この内容でよろしければ送信してください。</strong></td>
+              </tr>
+              <!-- 入力／確認 -->
+              <tr>
+                <th>ご氏名</th>
+                <td>
+                  <input type="hidden" name="item1" value="<?php echo $form[" item1 "];?>">
+                  <?php echo $form["item1"];?>
+                </td>
+              </tr>
 
-<form name="form1" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
-<input type="hidden" name="mode" value="confirm" />
-<table class="ta1 mb1em">
-<tr><td colspan="2" class="auto"><strong>この内容でよろしければ送信してください。</strong></td></tr>
-<!-- 入力／確認 -->
-<tr>
-<th>ご氏名</th>
-<td>
-<input type="hidden" name="item1" value="<?php echo $form["item1"];?>">
-<?php echo $form["item1"];?>
-</td>
-</tr>
+              <tr>
+                <th>ご氏名の
+                  <br class="br-resp">フリガナ</th>
+                <td>
+                  <input type="hidden" name="item2" value="<?php echo $form[" item2 "];?>">
+                  <?php echo $form["item2"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>ご氏名の<br class="br-resp">フリガナ</th>
-<td>
-<input type="hidden" name="item2" value="<?php echo $form["item2"];?>">
-<?php echo $form["item2"];?>
-</td>
-</tr>
+              <tr>
+                <th>郵便番号</th>
+                <td>
+                  〒
+                  <input type="hidden" name="zip11" value="<?php echo $form[" zip11 "];?>">
+                  <?php echo $form["zip11"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>郵便番号</th>
-<td>
-〒<input type="hidden" name="zip11" value="<?php echo $form["zip11"];?>">
-<?php echo $form["zip11"];?>
-</td>
-</tr>
+              <tr>
+                <th>ご住所</th>
+                <td>
+                  <input type="hidden" name="addr11" value="<?php echo $form[" addr11 "];?>">
+                  <?php echo $form["addr11"];?>
+                    <br>
+                    <input type="hidden" name="item5" value="<?php echo $form[" item5 "];?>">
+                    <?php echo $form["item5"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>ご住所</th>
-<td>
-<input type="hidden" name="addr11" value="<?php echo $form["addr11"];?>">
-<?php echo $form["addr11"];?>
-<br>
-<input type="hidden" name="item5" value="<?php echo $form["item5"];?>">
-<?php echo $form["item5"];?>
-</td>
-</tr>
+              <tr>
+                <th>電話番号</th>
+                <td>
+                  <input type="hidden" name="item6" value="<?php echo $form[" item6 "];?>">
+                  <?php echo $form["item6"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>電話番号</th>
-<td>
-<input type="hidden" name="item6" value="<?php echo $form["item6"];?>">
-<?php echo $form["item6"];?>
-</td>
-</tr>
+              <tr>
+                <th>メール
+                  <br class="br-resp">アドレス</th>
+                <td>
+                  <input type="hidden" name="item7" value="<?php echo $form[" item7 "];?>">
+                  <?php echo $form["item7"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>メール<br class="br-resp">アドレス</th>
-<td>
-<input type="hidden" name="item7" value="<?php echo $form["item7"];?>">
-<?php echo $form["item7"];?>
-</td>
-</tr>
+              <tr>
+                <th>生年月日</th>
+                <td>
+                  <input type="hidden" name="item8_year" value="<?php echo $form[" item8_year "];?>">
+                  <input type="hidden" name="item8_month" value="<?php echo $form[" item8_month "];?>">
+                  <input type="hidden" name="item8_day" value="<?php echo $form[" item8_day "];?>">
+                  <?php echo $form["item8_year"];?>年
+                    <?php echo $form["item8_month"];?>月
+                      <?php echo $form["item8_day"];?>日
+                </td>
+              </tr>
 
-<tr>
-<th>生年月日</th>
-<td>
-<input type="hidden" name="item8_year" value="<?php echo $form["item8_year"];?>">
-<input type="hidden" name="item8_month" value="<?php echo $form["item8_month"];?>">
-<input type="hidden" name="item8_day" value="<?php echo $form["item8_day"];?>">
-<?php echo $form["item8_year"];?>年<?php echo $form["item8_month"];?>月<?php echo $form["item8_day"];?>日
-</td>
-</tr>
+              <tr>
+                <th nowrap>プロフィール</th>
+                <td>
+                  <input type="hidden" name="item9" value="<?php echo $form[" item9 "]; ?>">
+                  <?php echo nl2br($form["item9"]);?>
+                </td>
+              </tr>
 
-<tr>
-<th nowrap>プロフィール</th>
-<td>
-<input type="hidden" name="item9" value="<?php echo $form["item9"]; ?>">
-<?php echo nl2br($form["item9"]);?>
-</td>
-</tr>
+              <tr>
+                <th>申請書</th>
+                <td>
+                  <input type="hidden" name="item10_value" value="<?php echo $form[" item10_value "];?>">
+                  <input type="hidden" name="item10_file" value="<?php echo $form[" item10_file "];?>">
+                  <input type="hidden" name="item10_type" value="<?php echo $form[" item10_type "];?>">
+                  <?php echo $form["item10_file"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>申請書</th>
-<td>
-<input type="hidden" name="item10_value" value="<?php echo $form["item10_value"];?>">
-<input type="hidden" name="item10_file" value="<?php echo $form["item10_file"];?>">
-<input type="hidden" name="item10_type" value="<?php echo $form["item10_type"];?>">
-<?php echo $form["item10_file"];?></td>
-</tr>
+              <tr>
+                <th>証明写真</th>
+                <td>
+                  <input type="hidden" name="item11_value" value="<?php echo $form[" item11_value "];?>">
+                  <input type="hidden" name="item11_file" value="<?php echo $form[" item11_file "];?>">
+                  <input type="hidden" name="item11_type" value="<?php echo $form[" item11_type "];?>">
+                  <?php echo $form["item11_file"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>証明写真</th>
-<td>
-<input type="hidden" name="item11_value" value="<?php echo $form["item11_value"];?>">
-<input type="hidden" name="item11_file" value="<?php echo $form["item11_file"];?>">
-<input type="hidden" name="item11_type" value="<?php echo $form["item11_type"];?>">
-<?php echo $form["item11_file"];?></td>
-</tr>
+              <tr>
+                <th>身分証明書</th>
+                <td>
+                  <input type="hidden" name="item12_value" value="<?php echo $form[" item12_value "];?>">
+                  <input type="hidden" name="item12_file" value="<?php echo $form[" item12_file "];?>">
+                  <input type="hidden" name="item12_type" value="<?php echo $form[" item12_type "];?>">
+                  <?php echo $form["item12_file"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>身分証明書</th>
-<td>
-<input type="hidden" name="item12_value" value="<?php echo $form["item12_value"];?>">
-<input type="hidden" name="item12_file" value="<?php echo $form["item12_file"];?>">
-<input type="hidden" name="item12_type" value="<?php echo $form["item12_type"];?>">
-<?php echo $form["item12_file"];?></td>
-</tr>
+              <tr>
+                <th>推薦書</th>
+                <td>
+                  <input type="hidden" name="item13_value" value="<?php echo $form[" item13_value "];?>">
+                  <input type="hidden" name="item13_file" value="<?php echo $form[" item13_file "];?>">
+                  <input type="hidden" name="item13_type" value="<?php echo $form[" item13_type "];?>">
+                  <?php echo $form["item13_file"];?>
+                </td>
+              </tr>
 
-<tr>
-<th>推薦書</th>
-<td>
-<input type="hidden" name="item13_value" value="<?php echo $form["item13_value"];?>">
-<input type="hidden" name="item13_file" value="<?php echo $form["item13_file"];?>">
-<input type="hidden" name="item13_type" value="<?php echo $form["item13_type"];?>">
-<?php echo $form["item13_file"];?></td>
-</tr>
+              <tr>
+                <th width="150">演奏動画
+                  <br class="br-resp">URL</th>
+                <td>
+                  <input type="hidden" name="item14" value="<?php echo $form[" item14 "];?>">
+                  <?php echo $form["item14"];?>
+                </td>
+              </tr>
 
-<tr>
-<th width="150">演奏動画<br class="br-resp">URL</th>
-<td>
-<input type="hidden" name="item14" value="<?php echo $form["item14"];?>">
-<?php echo $form["item14"];?>
-</td>
-</tr>
+            </table>
+            <div class="c">
+              <input type="submit" value="送信する" class="btn" /> &nbsp;&nbsp;
+              <input type="button" value="戻る" onClick="document.form1.mode.value='reinput';document.form1.submit()" class="btn" />
+            </div>
+          </form>
+          <!-- フォームの情報はここまでです -->
 
-</table>
-<div class="c">
-<input type="submit" value="送信する" class="btn" />
-&nbsp;&nbsp;
-<input type="button" value="戻る" onClick="document.form1.mode.value='reinput';document.form1.submit()" class="btn" />
-</div>
-</form>
-<!-- フォームの情報はここまでです -->
+        </section>
 
-</section>
+      </div>
+      <!--/.inner-->
 
-</div>
-<!--/.inner-->
+    </div>
+    <!--/#contents-->
 
-</div>
-<!--/#contents-->
+    <footer id="footer">
+    </footer>
 
-<footer id="footer">
-</footer>
-
-</div>
-<!--/#container-->
+  </div>
+  <!--/#container-->
 
 </body>
+
 </html>
