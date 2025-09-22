@@ -7238,7 +7238,8 @@ link
   background: url(../images/common/icn-link-blank-white.svg) no-repeat center center/contain
 }
 .link-pdf,
-.link-pdf-black {
+.link-pdf-black,
+.link-pdf-red {
   position: relative;
   display: inline-block;
   color: #406FAF !important;
@@ -7246,12 +7247,14 @@ link
   transition: .3s opacity ease-out
 }
 .link-pdf:hover,
-.link-pdf-black:hover {
+.link-pdf-black:hover,
+.link-pdf-red:hover {
   opacity: .7;
   text-decoration: none !important
 }
 .link-pdf::after,
-.link-pdf-black::after {
+.link-pdf-black::after,
+.link-pdf-red::after {
   content: "";
   position: absolute;
   top: 1px;
@@ -7263,11 +7266,19 @@ link
   height: 24px;
   margin: auto
 }
-.link-pdf-black {
+.link-pdf-red::after {
+  width: 22px;
+  height: 23px;
+}
+.link-pdf-black,
+.link-pdf-red {
   color: #333 !important
 }
 .link-pdf-black::after {
   background: url(../images/common/icn-link-pdf-black.svg) no-repeat center center/contain
+}
+.link-pdf-red::after {
+  background: url(../images/common/icn-link-pdf-red.png) no-repeat center center/contain
 }
 .link-map {
   
