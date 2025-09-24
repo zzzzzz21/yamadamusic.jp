@@ -298,7 +298,7 @@ if (!$_REQUEST["mode"]) {
 		sendmail($from_mail, $mail_sys, $subject_sys, $body_sys . $mail_body, $attach, $from_name);
 	}
 	//
-	if (isset($user_mail) && $_REQUEST[$user_mail]) {
+	if ($user_mail && $_REQUEST[$user_mail]) {
 		// 利用者向け
 		sendmail($from_mail, $_REQUEST[$user_mail], $subject, $body . $mail_body, $attach, $from_name);
 	}

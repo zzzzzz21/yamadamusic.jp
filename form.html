@@ -65,7 +65,7 @@
           <h2>お問い合わせフォーム<span>Contact</span></h2>
 
           <!-- フォームの情報はここからです -->
-          <form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER[" REQUEST_URI "];?>">
+          <form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
             <input type="hidden" name="mode" value="form">
             <table class="ta1">
               <!-- 入力／確認 -->
@@ -74,7 +74,7 @@
                 <th>ご氏名のフリガナ
                   <br>（カタカナ）<span style="color:red">※</span></th>
                 <td>
-                  <input name="item1" value="<?php echo $form[" item1 "];?>" type="text" size="40" maxlength="500" class="ws">
+                  <input name="item1" value="<?php echo $form["item1"];?>" type="text" size="40" maxlength="500" class="ws">
                   <?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
                 </td>
               </tr>
@@ -82,7 +82,7 @@
               <tr>
                 <th>ご氏名<span style="color:red">※</span></th>
                 <td>
-                  <input name="item2" value="<?php echo $form[" item2 "];?>" type="text" size="40" maxlength="500" class="ws">
+                  <input name="item2" value="<?php echo $form["item2"];?>" type="text" size="40" maxlength="500" class="ws">
                   <?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
                 </td>
               </tr>
@@ -90,7 +90,7 @@
               <tr>
                 <th>メールアドレス<span style="color:red">※</span></th>
                 <td>
-                  <input name="item3" value="<?php echo $form[" item3 "];?>" type="text" size="40" maxlength="500" class="ws">
+                  <input name="item3" value="<?php echo $form["item3"];?>" type="text" size="40" maxlength="500" class="ws">
                   <?php if ($msg["item3"]) echo '<div style="color:red">' . $msg["item3"] . '</div>'; ?>
                 </td>
               </tr>
@@ -98,7 +98,7 @@
               <tr>
                 <th width="150">電話番号<span style="color:red">※</span></th>
                 <td>
-                  <input name="item4" value="<?php echo $form[" item4 "];?>" type="number" autocomplete="tel" type="text" size="40" maxlength="500" class="ws">※ハイフン「-」なしでご記入ください
+                  <input name="item4" value="<?php echo $form["item4"];?>" type="number" autocomplete="tel" type="text" size="40" maxlength="500" class="ws">※ハイフン「-」なしでご記入ください
                   <?php if ($msg["item4"]) echo '<div style="color:red">' . $msg["item4"] . '</div>'; ?>
                 </td>
               </tr>
