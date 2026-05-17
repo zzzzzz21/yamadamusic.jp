@@ -7293,3 +7293,73 @@ link
   height: 21px;
   margin-right: 4px
 }
+.c-button-form {
+  display: inline-block;
+  background: linear-gradient(to bottom,  #324982 0%,#7db9e8 100%);
+  color:#fff;
+  font-size: 24px;
+  padding: .6em 2em;
+  border-radius: 8px;
+  text-decoration: none;
+  filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.15));
+  transition: all .3s ease-in-out
+}
+.c-button-form:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7f8f8+0,e9eaea+69,e9eaea+100 */
+  background: linear-gradient(to bottom,  #f7f8f8 0%,#e9eaea 69%,#e9eaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  transition: all .3s ease-in-out;
+  color: #394183;
+}
+.c-note {
+  padding: 1.6em 0;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  margin:0 0  1em;
+}
+.c-note li {
+  margin-bottom: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.c-note li:before {
+  content: '※';
+}
+
+.recital_202607 {
+  margin-bottom: 1em;
+  padding: 0 20px;
+}
+
+.recital_202607 p,
+.recital_202607 dl {
+  padding: 0!Important;
+}
+
+.c-recital_202507 {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-recital_202507-link {}
+
+.c-recital_202507-title {
+  font-size: 122%;
+}
+
+@media (min-width: 800px){
+  .recital_202607 {
+    display: flex;
+    flex-direction: row;
+    gap: 0 50px;
+    padding: 0 20px;
+  }
+
+  .c-recital_202507-link {
+    max-width: 335px;
+  }
+
+  .c-recital_202507-main {
+    flex-shrink: 1;
+    width: calc(100% - 385px);
+  }
+}
